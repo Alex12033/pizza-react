@@ -67,7 +67,7 @@
     "workbox-webpack-plugin": "^6.4.1"
   },
   "scripts": {
-    "start": "node scripts/start.js",
+    "start": "node server.js",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js",
     "server": "npx json-server --watch public/db.json --port=3001"
@@ -78,7 +78,7 @@
       "react-app/jest"
     ]
   },
-  "proxy": "http://localhost:3001",
+  "proxy": "https://reactshoppizza.herokuapp.com/api",
   "browserslist": {
     "production": [
       ">0.2%",
