@@ -77,7 +77,7 @@ function Cart() {
                     strokeLinejoin="round"
                   />
                 </svg>
-                Корзина
+                Cart
               </h2>
               <div className="cart__clear">
                 <svg
@@ -117,7 +117,7 @@ function Cart() {
                   />
                 </svg>
 
-                <span onClick={onClearCart}>Очистить корзину</span>
+                <span onClick={onClearCart}>Clear cart</span>
               </div>
             </div>
             <div className="content__items">
@@ -167,25 +167,25 @@ function Cart() {
                       strokeLinejoin="round"
                     />
                   </svg>
-                  <span>Вернуться назад</span>
+                  <span>Go back</span>
                 </Link>
                 <div className="button pay-btn">
-                  <span>Оплатить сейчас</span>
+                  <span>Pay now</span>
                 </div>
               </div>
             </div>
           </div>
         ) : (
           <div className="cart cart--empty">
-            <h2>Корзина пустая</h2>
+            <h2>Empty cart</h2>
             <p>
-              Вероятней всего, вы не заказывали ещё пиццу.
+              You probably haven't ordered pizza yet.
               <br />
-              Для того, чтобы заказать пиццу, перейди на главную страницу.
+              To order pizza, go to the main page.
             </p>
             <img src={emptyCartImage} alt="Empty cart" />
             <Link to="/" className="button button--black">
-              <span>Вернуться назад</span>
+              <span>Go back</span>
             </Link>
           </div>
         )}
