@@ -14,9 +14,8 @@ import { addPizzaToCart } from "../redux/action/cart";
 const categoryNames = ["Meet", "Vegy", "Greel", "Hot", "Close"];
 
 const sortNames = [
-  { name: "popular", type: "popular" },
+  { name: "rating", type: "rating" },
   { name: "price", type: "price" },
-  { name: "alphabet", type: "alphabet" },
 ];
 
 function Home() {
@@ -25,6 +24,7 @@ function Home() {
   const cartItems = useSelector(({ cart }) => cart.items);
   const isLoaded = useSelector(({ pizzas }) => pizzas.isLoaded);
   const { category, sortBy } = useSelector(({ filters }) => filters);
+ 
   useEffect(() => {
     dispatch(fetchPizzas(sortBy, category));
   }, [category, sortBy]);
