@@ -6,3 +6,9 @@ $orange: #fe5f1e;
 $container-width: 90%;
 
 $duration: 0.15s;
+
+@mixin media-max-width($width) {
+  @media (max-width: $width) {
+    @content;
+  }
+}

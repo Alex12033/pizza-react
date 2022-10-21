@@ -3,19 +3,36 @@
   margin: 0;
   list-style: none;
   outline: none;
-  font-family: 'Proxima Nova', Roboto, system-ui, Tahoma, sans-serif;
+  font-family: "Proxima Nova", Roboto, system-ui, Tahoma, sans-serif;
   box-sizing: border-box;
 }
 
 html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+  // scrollbar-color: #e99958;
+  // scrollbar-width: thin;
 }
 
 body {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   color: $black;
+  // scrollbar-color: #e99958;
+  // scrollbar-width: thin;
+}
+
+::-webkit-scrollbar {
+  width: 10px; /* ширина для вертикального скролла */
+  height: 8px; /* высота для горизонтального скролла */
+  background-color: #d1ccc8;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #bc4d08;
+  border-radius: 9em;
+  box-shadow: inset 1px 1px 10px #ff7300;
+  opacity: .4;
 }
 
 a,

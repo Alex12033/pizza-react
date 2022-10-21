@@ -5,12 +5,17 @@
   background-color: $orange;
   border-radius: 30px;
   padding: 10px 20px;
-  min-width: 100px;
+  min-width: 90px;
   text-align: center;
   cursor: pointer;
   transition: background-color $duration ease-in-out, border-color $duration ease-in-out;
   border: 1px solid transparent;
   @include noselect();
+
+  @include media-max-width(500px) {
+    margin-left: 5px;
+    padding: 5px 10px;
+  }
 
   &,
   span {
